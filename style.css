@@ -79,6 +79,7 @@ a {
 
 header {
     justify-content: space-between;
+    padding-bottom: 1.25rem;
 
     .img-logo {
         height: 2.5rem;
@@ -102,6 +103,40 @@ header {
         #prof-pic {
             width: 2.5rem;
             height: 2.5rem;
+        }
+    }
+}
+
+.about-container {
+    padding-block: 2rem;
+    justify-content: space-between;
+
+    & .about-bio {
+        flex-direction: column;
+
+        p {
+            font-size: var(--paragraph-md);
+            line-height: var(--pg-lh);
+        }
+    }
+
+    & .travel-wrapper {
+        width: 17.5rem;
+        flex-direction: column;
+        align-self: center;
+
+        & div {
+            height: 1.5rem;
+        }
+
+        & img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        p {
+            font-size: var(--paragraph-md);
+            line-height: var(--pg-lh);
         }
     }
 }
