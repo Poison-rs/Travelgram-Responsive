@@ -31,6 +31,7 @@ body {
     font-family: "Poppins", sans-serif;
     color: var(--text-secondary);
     padding: 2rem 1.5rem;
+    background-color: var(--surface-color);
 }
 
 h1 {
@@ -75,6 +76,10 @@ a {
 
 .item-center {
     align-items: center;
+}
+
+.break-mobile {
+    display: none;
 }
 
 header {
@@ -150,6 +155,15 @@ header {
         width: 17.875rem;
         height: 17.875rem;
     }
+
+    & img {
+        cursor: pointer;
+
+        &:hover {
+            -webkit-animation: shadow-drop-2-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, amplify 0.45s both ease-in-out;
+        }     
+    }
 }
 
 footer {
@@ -158,5 +172,101 @@ footer {
 
     & a {
         padding: .25rem;
+    }
+}
+
+@keyframes shadow-drop-2-center {
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5 );
+  }
+}
+
+@keyframes amplify {
+    to {
+        transform: scale(1.1);
+        border-radius: .75rem;
+    }
+}
+
+@media (width <= 25.875em) {
+    body {
+        padding: unset;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .break-mobile {
+        display: inherit;
+    }
+
+    .break-desktop {
+        display: none;
+    }
+
+    .header-container {
+        margin: 1rem;
+
+        & header {
+            padding: unset;
+        }
+    }
+    
+
+    .about-container {
+        padding: unset;
+        flex-wrap: wrap;
+
+        .about-img {
+            width: 7.5rem;
+            height: 7.5rem;
+            
+            & img {
+                width: 7.5rem;
+                height: 7.5rem;
+            }
+        }
+
+        & .about-info {
+            flex-direction: column;
+            padding: 2rem;
+        }
+
+        & .travel-wrapper {
+            padding-inline: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .image-wrapper {
+        
+        & div {
+            width: 20.5rem;
+            height: 20.5rem;
+
+            & img {
+                width: 20.5rem;
+                height: 20.5rem;
+
+                &:hover {
+                    animation: unset;
+                }
+            }
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
     }
 }
