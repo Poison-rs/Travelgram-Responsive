@@ -140,3 +140,14 @@ header {
         }
     }
 }
+
+.image-wrapper {
+    flex-wrap: wrap;
+    padding-block: 1.5rem;
+    justify-content: center;
+    
+    & div {
+        width: 17.875rem;
+        height: 17.875rem;
+    }
+}
