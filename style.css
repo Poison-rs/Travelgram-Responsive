@@ -151,3 +151,12 @@ header {
         height: 17.875rem;
     }
 }
+
+footer {
+    justify-content: space-between;
+    margin-top: 1.5rem;
+
+    & a {
+        padding: .25rem;
+    }
+}
