@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* variables */
+    /* colors */
+    --brand-color: #EF5F4C;
+    --bg-color: #FFFFFF;
+    --surface-color: #F5F5F5;
+    --skeleton-color: #D9D9D9;
+    --shape-transparent: #ffffff56;
+    --text-primary: #313131;
+    --text-secondary: #6C6C6C;
+
+    /* fonts */
+    --heading: 2rem;
+    --paragraph-md: .875rem;
+    --paragraph-sm: .75rem;
+    --hd-lh: 1.25;
+    --pg-lh: 1.70;
+    --fw-regular: 500;
+    --fw-bold: 700;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-secondary);
+}
+
+h1 {
+    font-size: var(--heading);
+    line-height: var(--hd-lh);
+    color: var(--text-primary);
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-1\.5{
+    gap: 1.5rem;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-\.5 {
+    gap: .5rem;
+}
