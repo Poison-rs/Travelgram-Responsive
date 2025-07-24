@@ -96,8 +96,6 @@ header {
     justify-content: space-between;
 
     .img-logo {
-        padding-block: .5rem;
-
         & a {
             margin: .25rem;
         }
@@ -161,14 +159,11 @@ header {
 .image-wrapper {
     flex-wrap: wrap;
     padding-block: 1.5rem;
-    
-    & div {
-        width: 17.875rem;
-        height: 17.875rem;
-    }
 
     & img {
         cursor: pointer;
+        width: 17.875rem;
+        height: 17.875rem;
 
         &:hover {
             -webkit-animation: shadow-drop-2-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -180,6 +175,9 @@ header {
 footer {
     justify-content: space-between;
     padding-block: 1.5rem;
+    padding-inline: 2rem;
+    margin-inline: auto;
+    max-width: 80em;
 
     & a {
         padding: .25rem;
@@ -224,7 +222,7 @@ footer {
     }
 
     .header-container {
-        margin: 1rem;
+        padding: 1rem;
 
         & header {
             padding: unset;
@@ -257,19 +255,20 @@ footer {
         }
     }
 
+    .main-container {
+        padding: 1rem;
+    }
+
     .image-wrapper {
-        
-        & div {
-            width: 20.5rem;
-            height: 20.5rem;
+        padding: 0;
+        gap: 1rem;
 
-            & img {
-                width: 20.5rem;
-                height: 20.5rem;
+        & img {
+            width: 22.5rem;
+            height: 22.5rem;
 
-                &:hover {
+            &:hover {
                     animation: unset;
-                }
             }
         }
     }
@@ -277,7 +276,7 @@ footer {
     footer {
         flex-direction: column;
         align-items: center;
+        padding-inline: 1rem;
         gap: 1rem;
-        margin-bottom: 1rem;
     }
 }
