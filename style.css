@@ -188,6 +188,8 @@ footer {
     }
 }
 
+/* Animations for the images of image-wrapper section */
+
 @keyframes shadow-drop-2-center {
   100% {
     -webkit-transform: translateZ(50px);
@@ -203,6 +205,8 @@ footer {
         border-radius: .75rem;
     }
 }
+
+/* Responsivity for mobiles vertically */
 
 @media (width <= 26.875em) {
     body {
